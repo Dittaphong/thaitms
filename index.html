@@ -56,49 +56,48 @@
       </ul>
     </div>
   </div>
-</nav> 
-
+</nav>  
 <div class="container-fluid">
   <div class="row content caltab">
-    <div class="col-sm-1 hidden-xs mainmenu" style="padding:0% 1.5% 1% 1.5%;"> 
-      <br>
+    <div class="col-sm-1 hidden-xs mainmenu" >  
        <div class="brand">
-        <a class="logo" href="http://192.168.2.135/tms/example2.html#section1">
+        <a class="logo" href="index.html">
           <img src="assets/images/logoAble.png"> 
           <!-- <h2><i>able</i></h2>-->
         </a>
        </div>
       <br>
-      <ul class="nav nav-pills nav-stacked main-menu">
-        <li class="active">
-          <a href="#section1" title="home"><span class="glyphicon glyphicon-dashboard" ></span></a>
-        </li> 
-        <li class="noneactive">
-          <a href="#section3"><span class="glyphicon glyphicon-import" ></span></a>
-        </li>
-        <li class="noneactive">
-          <a href="#section4"><span class="glyphicon glyphicon-home" ></span></a>
-        </li>
-        <li class="noneactive">
-          <a href="#section5"><span class="glyphicon glyphicon-home" ></span></a>
-        </li>
-        <li class="noneactive">
-          <a href="#section6"><span class="glyphicon glyphicon-home" ></span></a>
-        </li>
-        <li class="noneactive">
-          <a href="#section7"><span class="glyphicon glyphicon-home" ></span></a>
-        </li>
-        <li class="noneactive">
-          <a href="#section8"><span class="glyphicon glyphicon-home" ></span></a>
-        </li>
-        <li class="noneactive">
-          <a href="#section9"><span class="glyphicon glyphicon-home" ></span></a>
-        </li>
-      </ul>
+      <div class="nev_slide_main">
+        <ul class="nav nav-pills nav-stacked main-menu"> 
+          <li class="active">
+            <a href="#section1" title="หน้าหลัก"><span class="glyphicon glyphicon-dashboard" ></span><br>DASHBOARD</a>
+          </li>   
+          <li class="noneactive">
+            <a href="#section3"><span class="glyphicon glyphicon-import" ></span><br>ORDER</a>
+          </li>
+          <li class="noneactive">
+            <a href="#section4"><span class="glyphicon glyphicon-edit" ></span><br>PLAN</a>
+          </li>
+          <li class="noneactive">
+            <a href="#section5"><span class="glyphicon glyphicon-copy" ></span><br>MANIFEST</a>
+          </li>
+          <li class="noneactive">
+            <a href="#section6"><span class="glyphicon glyphicon-share-alt" ></span><br>LEAVE</a>
+          </li>
+          <li class="noneactive">
+            <a href="#section7"><span class="glyphicon glyphicon-home" ></span><br>RECIVE</a>
+          </li>
+          <li class="noneactive">
+            <a href="#section8"><span class="glyphicon glyphicon-home" ></span><br>CLOSED</a>
+          </li>
+          <li class="noneactive">
+            <a href="#section9"><span class="glyphicon glyphicon-home" ></span><br>EXPESSE</a>
+          </li> 
+        </ul>
+      </div>
       <br>
     </div> 
-    <div class="col-sm-2 sidenav" >
-      <br>
+    <div class="col-sm-2 sidenav" > 
       <ul class="nav nav-pills nav-stacked">
         <li class="active" >
           <h2>รอคุณอยู่...</h2>
@@ -118,7 +117,7 @@
       </ul>
       <br>
     </div>
-    <div class="col-sm-9"> 
+    <div class="col-sm-7"> 
       <div class="row">
         <div class="navigation">
           <span>#Dashboard</span>
@@ -131,70 +130,93 @@
           <span class="glyphicon glyphicon-menu-right nav-to"></span> 
           <span>main</span>  -->
         </div> 
-      </div> 
-<!--  
-      <div class="row">
-        <div class="col-sm-3">
-          <div class="well">
-            <h4>Users</h4>
-            <p>1 Million</p>
-          </div>
-        </div>
-        <div class="col-sm-3">
-          <div class="well">
-            <h4>Pages</h4>
-            <p>100 Million</p>
-          </div>
-        </div>
-        <div class="col-sm-3">
-          <div class="well">
-            <h4>Sessions</h4>
-            <p>10 Million</p>
-          </div>
-        </div>
-        <div class="col-sm-3">
-          <div class="well">
-            <h4>Bounce</h4>
-            <p>30%</p>
-          </div>
-        </div>
-      </div>
-      <div class="row">
-        <div class="col-sm-4">
-          <div class="well">
-            <p>Text</p>
-            <p>Text</p>
-            <p>Text</p>
-          </div>
-        </div>
-        <div class="col-sm-4">
-          <div class="well">
-            <p>Text</p>
-            <p>Text</p>
-            <p>Text</p>
-          </div>
-        </div>
-        <div class="col-sm-4">
-          <div class="well">
-            <p>Text</p>
-            <p>Text</p>
-            <p>Text</p>
-          </div>
-        </div>
-      </div>
-      <div class="row">
-        <div class="col-sm-8">
-          <div class="well">
-            <p>Text</p>
-          </div>
-        </div>
-        <div class="col-sm-4">
-          <div class="well">
-            <p>Text</p>
-          </div>
-        </div>
-      </div>
--->
+      </div>  
+      <div class="row contentmain" >
+        <div class="col-sm-12"> 
+            <h4>Users</h4> 
+            <form>
+              <div class="form-group">
+                <label for="email">Email address:</label>
+                <input type="email" class="form-control" id="email">
+              </div>
+              <div class="form-group">
+                <label for="pwd">Password:</label>
+                <input type="password" class="form-control" id="pwd">
+              </div>
+              <div class="form-group">
+                <label for="pwd">Password:</label>
+                <input type="password" class="form-control" id="pwd">
+              </div>
+              <div class="form-group">
+                <label for="pwd">Password:</label>
+                <input type="password" class="form-control" id="pwd">
+              </div>
+              <div class="form-group">
+                <label for="pwd">Password:</label>
+                <input type="password" class="form-control" id="pwd">
+              </div>
+              <div class="form-group">
+                <label for="pwd">Password:</label>
+                <input type="password" class="form-control" id="pwd">
+              </div>
+              <div class="form-group">
+                <label for="pwd">Password:</label>
+                <input type="password" class="form-control" id="pwd">
+              </div>
+              <div class="form-group">
+                <label for="pwd">Password:</label>
+                <input type="password" class="form-control" id="pwd">
+              </div>
+              <div class="form-group">
+                <label for="pwd">Password:</label>
+                <input type="password" class="form-control" id="pwd">
+              </div>
+              <div class="form-group">
+                <label for="pwd">Password:</label>
+                <input type="password" class="form-control" id="pwd">
+              </div>
+              <div class="checkbox">
+                <label><input type="checkbox"> Remember me</label>
+              </div>
+              <div class="checkbox">
+                <label><input type="checkbox"> Remember me</label>
+              </div>
+              <div class="checkbox">
+                <label><input type="checkbox"> Remember me</label>
+              </div>
+              <div class="checkbox">
+                <label><input type="checkbox"> Remember me</label>
+              </div>
+              <div class="checkbox">
+                <label><input type="checkbox"> Remember me</label>
+              </div>
+              <div class="checkbox">
+                <label><input type="checkbox"> Remember me</label>
+              </div>
+              <div class="checkbox">
+                <label><input type="checkbox"> Remember me</label>
+              </div>
+              <div class="checkbox">
+                <label><input type="checkbox"> Remember me</label>
+              </div>
+              <div class="checkbox">
+                <label><input type="checkbox"> Remember me</label>
+              </div>
+              <div class="checkbox">
+                <label><input type="checkbox"> Remember me</label>
+              </div>
+              <button type="submit" class="btn btn-default">Submit</button>
+            </form>
+             <br>
+             <br>
+        </div> 
+      </div> <!-- class="row" -->
+    </div> <!-- class="col-sm-9" -->
+    <div class="col-sm-2 tabstatus" > 
+      <h2>กิจกรรม</h2>  
+      <p>โอนวัตถุดิบให้บ่อแช่ 20 ตัน</p>
+      <p>มีวัตถุดิบโอนมาให้ 20 ตัน</p>
+      <br>
     </div>
   </div>
 </div>
