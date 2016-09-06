@@ -1,0 +1,94 @@
+/* main background 31495e  */
+
+.row.content {height: 100%;}
+
+.mainmenu{
+	background: #11252F;
+	height: 98vh;
+	color:#FAFAFA;
+}
+
+ul.main-menu > li {
+	height: 50px;
+	text-align:center;
+	font-size:150%;
+}
+
+ul.main-menu > li + li {
+  margin-top: 19%;
+  margin-left: 0;
+}  
+
+ul.main-menu > li.noneactive > a{
+	color:#354a5d;
+	background-color: #405a71;
+	border: 2px solid #405a71;
+}
+
+ul.main-menu > li.noneactive > a:hover {
+	color:#FAFAFA;
+	background-color: #405a71;
+	border: 2px solid #FE9A2E;
+}
+
+ul.main-menu > li.active > a,
+ul.main-menu > li.active > a:hover,
+ul.main-menu > li.active > a:focus {
+  color: #fff;
+  background-color: #49657f;   
+  border: 2px solid #FE9A2E;
+}
+ 
+.sidenav {
+	background-color: #183544; /*405a71 */
+	height: 98vh;
+	color:#FAFAFA;
+/*	border-right: 1px;
+	border-color: #D8D8D8;
+	border-right-style: solid;*/
+}
+
+
+
+.brand{ 
+	text-align: center; 
+}
+.brand .logo img{
+	width: 100%;
+}
+.navbar-top {
+      margin-bottom: 0;
+      border-radius: 0;
+    }
+    
+/* On small screens, set height to 'auto' for the grid */
+@media screen and (max-width: 767px) {
+  .row.content {height: auto;}
+}
+
+.navigation{
+	padding: 10px;
+	border: 0;
+  	border-bottom: 1px solid #eee; 
+}
+
+.nav-to{
+	font-size: 75%;
+	color: #666;
+}
+
+.footer{
+	position:fixed;
+   left:0px;
+   bottom:0px;
+   height:30px;
+   width:100%;
+
+	z-index:1000;
+	border: 0;
+  	border-top: 1px solid #bababa;
+  	background: #bababa;
+  	color: #666;
+}
+
+
