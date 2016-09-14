@@ -1,0 +1,55 @@
+.nevhdr{
+	border-top: 3px solid #e54e53;
+	/*box-shadow: 0 1px 1px rgba(0, 0, 0,.3);*/
+}
+
+.navbar-header > a.navbar-brand{
+	color:#e54e53;  
+}
+
+
+.navbar-header > a.navbar-brand:hover,
+.navbar-header > a.navbar-brand:focus  {
+	color:#e54e53; 
+	background-color: #080808;
+}
+
+.navbar-nav > li:hover,
+.navbar-nav > li:focus {
+  background-color: #080808;
+}
+/*
+.navbar-header:hover,
+.navbar-header:focus {
+  background-color: #080808;
+}*/
+
+/*@media (max-width: 768px){
+	 ถ้าหน้าจอเล็กกว่า 768px จะกำหนดคุณสมบัติยังไงบ้าง 
+	.navbar-right{
+		display: none;
+	}
+}*/
+
+/* logo */
+img.logo{ 
+	float: left;
+	/*width: 20%; */
+	margin-top:-10px; 
+}
+
+/* Header Page*/
+.row-header{ 
+	border-bottom: 1px solid #eee;
+	box-shadow-bottom: 0px 0px 1px rgba(0, 0, 0,.3);
+}
+
+.navbar-brand > i > span { 
+	color:#FAFAFA;
+}
+
+/* BUTTON */
+.btn-left{
+	float: right;
+}
+/* BUTTON */
