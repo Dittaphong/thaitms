@@ -1,6 +1,9 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
+<html lang="en" ng-app="myApp">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1"> 
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -22,7 +25,7 @@
     <link href="font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
 </head>
 
-<body>
+<body ng-controller='indexController'>
 
     <!-- Navigation -->
     <nav class="navbar navbar-inverse navbar-fixed-top nevhdr" role="navigation">
@@ -44,43 +47,32 @@
             <div class="collapse navbar-collapse " id="bs-example-navbar-collapse-1">
                 <ul class="nav navbar-nav navbar-left ">
                     <li>
-                        <a href="about.html" title="Dashboard">ภาพรวม</a>
+                        <a href="#/" title="Dashboard">ภาพรวม</a>
                     </li> 
                     <li>
-                        <a href="order.html" title="Order">คำสั่งขนส่ง</a>
+                        <a href="#/order" title="Order"><base href="#/order" >คำสั่งขนส่ง</base></a>
                     </li>
                     <li>
-                        <a href="contact.html" title="Planning">วางแผน</a>
+                        <a href="/order" title="Planning">วางแผน</a>
                     </li>
                     <li>
-                        <a href="contact.html" title="Planning">ใบขนส่ง</a>
-                    </li>
-                    <!--  
-                    <li class="dropdown">
-                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" title="Trip Sheet"> ใบขนส่ง <b class="caret"></b></a>
-                        <ul class="dropdown-menu">
-                            <li>
-                                <a href="portfolio-1-col.html">ปรับปรุงใบขนส่ง</a>
-                            </li>
-                            <li>
-                                <a href="portfolio-2-col.html">ทำรับสินค้า</a>
-                            </li> 
-                        </ul>
-                    </li>
-                    -->
-                    <li>
-                        <a href="contact.html">ปล่อยรถ</a>
+                        <a href="/order" title="TripSheet">ใบขนส่ง</a>
                     </li>
                     <li>
-                        <a href="contact.html">รับสินค้า</a>
+                        <a href="/order">ปล่อยรถ</a>
                     </li>
                     <li>
-                        <a href="contact.html">ค่าใช้จ่าย</a>
+                        <a href="/order">รับสินค้า</a>
+                    </li>
+                    <li>
+                        <a href="/order">ค่าใช้จ่าย</a>
                     </li>
                 </ul>
                 <ul class="nav navbar-nav navbar-right"> 
                     <li class="dropdown">
-                        <a href="#" class="dropdown-toggle" data-toggle="dropdown"> <span class="glyphicon glyphicon-cog"></span> <b class="caret"></b></a>
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown"> 
+                            <span class="glyphicon glyphicon-cog"></span> <b class="caret"></b>
+                        </a>
                         <ul class="dropdown-menu">
                             <li>
                                 <a href="portfolio-1-col.html">Master</a> 
@@ -91,7 +83,9 @@
                         </ul>
                     </li> 
                     <li class="dropdown ">
-                        <a href="#" class="dropdown-toggle" data-toggle="dropdown"><span class="glyphicon glyphicon-user"></span> <b class="caret"></b></a>
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+                            <span class="glyphicon glyphicon-user"></span> <b class="caret"></b>
+                        </a>
                         <ul class="dropdown-menu">
                             <li>
                                 <a href="portfolio-1-col.html">Profile</a>
@@ -107,32 +101,12 @@
         <!-- /.container -->
     </nav> 
 
+    <!-- /ng-view -->
+    <div ng-view></div> 
+    <!-- /ng-view -->
     
-    <!-- Header Page -->
-    <nav class="row-header">
-        <div class="container">   
-            <h1>
-                ทำอะไรดี ? 
-                <button class="btn btn-danger btn-left"> + เพิ่มรายการใหม่</button>
-            </h1> 
-        </div>
-    </nav>
-    <!-- /.Header Page -->
-
-
-    <!-- Page Content -->
-    <div class="container">     
-        <!-- panel-custom -->
-        <div class="row" id="panel-custom">
-            <div class="col-lg-12">
-             ssss
-            </div>
-        </div>
-        <!-- /#panel-custom --> 
-
-        <!-- Footer -->
-        <!--  
-            <footer>
+    <!-- Footer --> 
+    <!--    <footer>
                 <hr>
                 <div class="row">
                     <div class="col-lg-12">
@@ -140,12 +114,13 @@
                     </div>
                 </div>
             </footer>
-        -->
-    </div>
-    <!-- /.container -->
+    -->
+    <!-- /Footer --> 
 
     <!-- angular.min.js -->
     <script src="js/angular.min.js"></script>
+    <script src="js/angular-route.min.js"></script>
+    <script src="js/app.js"></script>
 
     <!-- jQuery -->
     <script src="js/jquery.js"></script>

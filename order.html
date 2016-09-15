@@ -1,0 +1,25 @@
+<!-- Header Page -->
+    <nav class="row-header">
+        <div class="container">   
+            <h2>
+                {{pagename}}
+                <button ng-if="isNewPaper" class="btn btn-danger btn-left newPaper"> + เพิ่มรายการใหม่</button> 
+            </h2> 
+        </div>
+    </nav>
+<!-- /.Header Page -->
+<!-- Page Content -->
+    <div class="container" >
+        <!-- panel-custom -->
+        <div class="row" id="panel-custom">
+            <div class="col-lg-12"> 
+            	<h2>ORDER PAGE</h2>
+				<p> Welcome Key in Order</p>
+             	<ul ng-init='message'>
+             		<li ng-repeat='a in message'>{{ a.fname +' '+a.lname}}</li>
+             	</ul> 
+            </div>
+        </div>
+        <!-- /#panel-custom -->  
+    </div>
+<!-- /.container -->
